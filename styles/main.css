@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-position: bottom -20% left 50%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding: 3rem 4rem;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+body.home {
+  background-image: url(../public/bg-home.png);
+}
+
+body.universe {
+  background-image: url(../public/bg-universe.png);
+}
+
+body.exploration {
+  background-image: url(../public/bg-exploration.png);
+}
+
+header {
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+header ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: 0.1s all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  font-weight: 500;
+  color: #aeaeb7;
+}
+
+header ul li a:hover {
+  color: #FFF;
+  text-shadow: 0 0 7px #FFF;
+}
+
+body.home header ul li:nth-child(1) a {
+  color: #FFF;
+  text-shadow: 0 0 7px #FFF;
+}
+
+body.universe header ul li:nth-child(2) a {
+  color: #FFF;
+  text-shadow: 0 0 7px #FFF;
+}
+
+body.exploration header ul li:nth-child(3) a {
+  color: #FFF;
+  text-shadow: 0 0 7px #FFF;
+}
+
+/* Home Page */
+#home {
+  width: 100vw;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  inset: 1;
+  justify-content: center;
+}
+
+#home h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  animation: downtop 800ms ease-in-out backwards reverse;
+  color: #E1E1E6;
+}
+
+#home a {
+  width: 14rem;
+  height: 3.2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  outline: 2px solid #FFF;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+  animation: topdown 800ms ease-in-out backwards reverse;
+  cursor: pointer;
+  color: #FFF;
+}
+
+#home a:hover {
+  background: #FFF;
+  color: #02799D;
+}
+
+/* Universe Page */
+#universe {
+  width: 100%;
+  margin-top: 8rem;
+  padding-left: 3rem;
+}
+
+#universe h1 {
+  font-size: 4rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: #FFF;
+}
+
+#universe p {
+  width: 35%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: #E1E1E6;
+}
+
+/* Exploration Page */
+#exploration {
+  width: 100%;
+  margin-top: 8rem;
+  padding-left: 3rem;
+}
+
+#exploration h1 {
+  font-size: 4rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: #FFF;
+}
+
+#exploration p {
+  width: 36%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  animation: opacity 800ms ease-in-out backwards reverse;
+  color: #E1E1E6;
+}
+
+/* ERROR 404 PAGE */
+#erro {
+  width: 100vw;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  inset: 1;
+  justify-content: center;
+}
+
+#erro img {
+  width: 250px;
+}
+
+#erro h1 {
+  font-size: 2rem;
+  color: #fff;
+}
